@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway&display=swap');
+
+
+body{
+    background-color:#272727 ;
+    font-family: 'Raleway';    
+    color:white;    
+}
+
+h1{
+    width: 93%;
+    height: 138px;
+    font-weight: 700;
+    font-size: 39px;
+    text-align: center;
+    padding: 40px;
+}
+
+.blocoMaiorIdade p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.blocoMaiorIdade{
+    width: 80%;
+    font-size: 28px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    background: #CA7900;
+    border-radius: 40px;
+    margin:auto;
+}
+
+
+.blocoMaiorIdade button{
+    background: #CA8500;
+    border: 9px solid #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    border-radius: 14px;
+    width: 225px;
+    height: 76px;
+    color:white;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 20px;
+  
+}
+
+.blocoMaiorIdade img{
+    margin-top: -60px;
+    width: 164px;
+    height: 110px;
+
+}

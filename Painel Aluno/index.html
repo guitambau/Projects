@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+function calculaMedia(){
+    let n1 = document.getElementById("nota1").value
+    let n2 = document.getElementById("nota2").value
+
+    let media = (eval(n1) + eval(n2))/2;
+
+    window.location.href="resultado.html?media="+media
+
+}
+
+
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Painel do Aluno</title>
+</head>
+<body>
+    <h1 id="cabecalho"> Painel do aluno <img src="assets/images/image 1.png" alt="Lápis"></h1>
+
+    <section class="formulario">
+        
+
+            <p>Digite a primeira Nota:</p>
+            <input id="nota1" type="number" placeholder="primeira nota">
+    
+            <p>Digite a segunda Nota: </p>
+            <input id="nota2"type="number"placeholder="segunda nota">
+    
+            <button onclick="calculaMedia()">Calcular</button>
+        
+
+    </section>
+
+</body>
+</html>

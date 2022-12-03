@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+function getResultado(){
+    const url = new URLSearchParams(window.location.search);
+    let media = url.get("media");
+    document.getElementById("resultado").value = media;
+
+    if(media>=6){
+        document.getElementById("statusAluno").innerHTML = "aprovado"
+        document.getElementById("statusAluno").style.color = "green"
+    }else{
+        document.getElementById("statusAluno").innerHTML = "reprovado"
+        document.getElementById("statusAluno").style.color = "red"
+    }
+}
+
+
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Painel do Aluno</title>
+</head>
+<body onload="pegaResultado()">
+    <h1 id="cabecalho"> Painel do aluno <img src="assets/images/image 1.png" alt="Lápis"></h1>
+
+    <section class="formulario">
+        
+            <p>A média do aluno é:</p>
+            <input id="resultado" type="number" placeholder="primeira nota">
+    
+           <p>Portando esta <span id="statusAluno"></span>!</p>
+        
+
+    </section>
+
+</body>
+</html>

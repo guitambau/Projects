@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+    function getIdade(){
+        const url = new URLSearchParams(window.location.search);
+        let idade = url.get("idade")
+
+        if(idade==1){
+            document.getElementById("lblBoasVindas").innerHTML = "Olá! Gostaria de te dar boas vindas a Cervejaria do Pericles. Aqui você encontrará as melhores bebidas do Brasil "
+        }else{document.getElementById("lblBoasVindas").innerHTML = "Sinto muito, mas este site só é permitido para maiores de 18 anos! "}
+    }
+
+
+</script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleMercado.css">
+    <title>Cervejaria Pericles</title>
+</head>
+<body onload="getIdade()">
+
+    <nav>
+        <ul>
+            <li><a href="#">A Cervejaria</a></li>
+            <li><a href="#">Nossas Cervejas</a></li>
+            <li><a href="#">Delivery</a></li>
+        </ul>
+        <span class="carrinho">
+            <a href="#">
+                Meu Carrinho 
+                <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+            </a>
+        </span>
+    </nav>
+
+    <section class="card">
+
+        <img src="assets/images/cerveja.png" alt="cerveja">
+        <h1 id="lblBoasVindas"></h1>
+    </section>
+
+        
+
+
+      
+   
+
+</body>
+</html>

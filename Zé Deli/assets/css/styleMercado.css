@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway&display=swap');
+
+
+body{
+    background-color:#272727 ;
+    font-family: 'Raleway';    
+    color:white;    
+}
+
+.card{
+    width: 80%;
+    font-size: 28px;
+    text-align: center;
+    background: #CA7900;
+    border-radius: 40px;
+    margin:auto;
+}
+
+.card img{
+    margin-top: -60px;
+    width: 164px;
+    height: 110px;
+}
+h1{
+    color:white;
+}
